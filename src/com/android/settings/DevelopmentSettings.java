@@ -53,6 +53,7 @@ public class DevelopmentSettings extends PreferenceFragment
                 OnPreferenceChangeListener {
 
     private static final String ENABLE_ADB = "enable_adb";
+    private static final String ADB_NOTIFY = "adb_notify";
 
     private static final String VERIFIER_DEVICE_IDENTIFIER = "verifier_device_identifier";
     private static final String KEEP_SCREEN_ON = "keep_screen_on";
@@ -83,6 +84,7 @@ public class DevelopmentSettings extends PreferenceFragment
     private IBackupManager mBackupManager;
 
     private CheckBoxPreference mEnableAdb;
+    private CheckBoxPreference mAdbNotify;
     private CheckBoxPreference mKeepScreenOn;
     private CheckBoxPreference mAllowMockLocation;
     private PreferenceScreen mPassword;
@@ -118,6 +120,7 @@ public class DevelopmentSettings extends PreferenceFragment
         addPreferencesFromResource(R.xml.development_prefs);
 
         mEnableAdb = (CheckBoxPreference) findPreference(ENABLE_ADB);
+        mAdbNotify = (CheckBoxPreference) findPreference(ADB_NOTIFY);
         mKeepScreenOn = (CheckBoxPreference) findPreference(KEEP_SCREEN_ON);
         mAllowMockLocation = (CheckBoxPreference) findPreference(ALLOW_MOCK_LOCATION);
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
@@ -171,6 +174,8 @@ public class DevelopmentSettings extends PreferenceFragment
         final ContentResolver cr = getActivity().getContentResolver();
         mEnableAdb.setChecked(Settings.Secure.getInt(cr,
                 Settings.Secure.ADB_ENABLED, 0) != 0);
+        mAdbNotify.setChecked(Settings.Secure.getInt(cr,
+                Settings.Secure.ADB_NOTIFY, 1) != 0);
         mKeepScreenOn.setChecked(Settings.System.getInt(cr,
                 Settings.System.STAY_ON_WHILE_PLUGGED_IN, 0) != 0);
         mAllowMockLocation.setChecked(Settings.Secure.getInt(cr,
@@ -449,6 +454,10 @@ public class DevelopmentSettings extends PreferenceFragment
                 Settings.Secure.putInt(getActivity().getContentResolver(),
                         Settings.Secure.ADB_ENABLED, 0);
             }
+        } else if (preference == mAdbNotify) {
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.ADB_NOTIFY,
+                    mAdbNotify.isChecked() ? 1 : 0);
         } else if (preference == mKeepScreenOn) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STAY_ON_WHILE_PLUGGED_IN, 

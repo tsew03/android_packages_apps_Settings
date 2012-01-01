@@ -56,6 +56,20 @@
         android:breadCrumbTitle="@string/wireless_networks_settings_title"
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
+    
+    <!-- CND Settings -->
+    <header android:title="@string/header_category_cnd" />
+    
+    <!-- Codename: Launcher -->
+    <header
+        android:id="@+id/launcher_settings"
+        android:title="@string/launcher_settings_title"
+        android:icon="@drawable/ic_launcher_cnd">
+        <intent
+        android:action="android.intent.action.MAIN"
+        android:targetPackage="com.android.launcher"
+        android:targetClass="com.android.launcher2.preference.Preferences" />
+    </header>
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />

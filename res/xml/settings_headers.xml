@@ -60,6 +60,14 @@
     <!-- CND Settings -->
     <header android:title="@string/header_category_cnd" />
     
+    <!-- Codename: Performance (kejar31, Jrummy, CM, RootzBoat) -->
+    <header
+        android:id="@+id/performance_settings"
+        android:title="@string/cpu_settings_title"
+        android:fragment="com.android.settings.PerformanceSettings"
+        android:icon="@drawable/ic_launcher_cnd">
+    </header>
+    
     <!-- Codename: Launcher -->
     <header
         android:id="@+id/launcher_settings"

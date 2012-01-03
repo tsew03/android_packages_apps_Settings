@@ -181,6 +181,7 @@ public class DevelopmentSettings extends PreferenceFragment
         mEnableAdb.setChecked(Settings.Secure.getInt(cr,
                 Settings.Secure.ADB_ENABLED, 0) != 0);
         mAdbNotify.setChecked(Settings.Secure.getInt(cr,
+                Settings.Secure.ADB_NOTIFY, 1) != 0);
         mAdbOverNetwork.setChecked(Settings.Secure.getInt(cr,
                 Settings.Secure.ADB_PORT, 0) > 0);
 

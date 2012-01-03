@@ -60,12 +60,15 @@
     <!-- CND Settings -->
     <header android:title="@string/header_category_cnd" />
     
-    <!-- Codename: Performance (kejar31, Jrummy, CM, RootzBoat) -->
+    <!-- Codename: Settings -->
     <header
-        android:id="@+id/performance_settings"
-        android:title="@string/cpu_settings_title"
-        android:fragment="com.android.settings.PerformanceSettings"
-        android:icon="@drawable/ic_launcher_cnd">
+        android:id="@+id/cnd_settings"
+        android:title="@string/cnd_settings_title"
+        android:icon="@drawable/ic_settings_cnd">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.codenamedroid.settings"
+            android:targetClass="com.codenamedroid.settings.SlideSettings" />
     </header>
     
     <!-- Codename: Launcher -->
@@ -74,9 +77,9 @@
         android:title="@string/launcher_settings_title"
         android:icon="@drawable/ic_launcher_cnd">
         <intent
-        android:action="android.intent.action.MAIN"
-        android:targetPackage="com.android.launcher"
-        android:targetClass="com.android.launcher2.preference.Preferences" />
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.launcher"
+            android:targetClass="com.android.launcher2.preference.Preferences" />
     </header>
 
     <!-- DEVICE -->

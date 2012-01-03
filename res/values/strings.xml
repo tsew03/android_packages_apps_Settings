@@ -1155,31 +1155,10 @@
     <string name="android_beam_explained">When this feature is turned on, you can beam app content to another NFC-capable device by holding the devices close together. For example, you can beam Browser pages, YouTube videos, People contacts, and more.\n\nJust bring the devices together (typically back to back) and then touch your screen. The app determines what gets beamed.</string>
     
     <!-- Codename Header --> <skip />
+    <!-- Title of CND settings entry in the left top level menu -->
+    <string name="cnd_settings_title">Settings</string>
     <!-- Title of CND Launcher entry in the left top level menu -->
     <string name="launcher_settings_title">Launcher</string>
-
-    <string name="performance_prefs_title">Overclocking</string>
-    
-    <string name="cpu_settings_title">Overclocking</string>
-    <string name="cpu_title">Overclocking</string>
-    <string name="advanced_settings_voltage">Advanced settings</string>
-    <string name="cpu_summary">Governor and clock settings</string>
-    <string name="cpu_governors_title">Available governors</string>
-    <string name="cpu_governors_summary">List of available governors\nCurrently selected: %S</string>
-    <string name="cpu_min_freq_title">Min CPU frequency</string>
-    <string name="cpu_min_freq_summary">Minimum CPU frequency\nCurrently: %s</string>
-    <string name="cpu_max_freq_title">Max CPU frequency</string>
-    <string name="cpu_max_freq_summary">Maximum CPU frequency\nCurrently: %s</string>
-    <string name="cpu_set_on_boot">Set on boot</string>
-    <string name="cpu_set_on_boot_summary">Restore CPU settings on boot</string>
-    
-    <string name="voltage_settings">Voltage settings</string>
-    <string name="voltage_settings_summary">Fine tune kernel voltage settings</string>
-    <string name="error_values">Error getting values</string>
-    <string name="apply_values">Apply values</string>
-    <string name="freq">Frequency</string>
-    <string name="current">mV current</string>
-    <string name="saved">mV saved</string>
 
     <!-- Wi-Fi Settings --> <skip />
     <!-- Used in the 1st-level settings screen to turn on Wi-Fi -->

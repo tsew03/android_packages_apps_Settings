@@ -2697,6 +2697,8 @@ found in the list of installed apps.</string>
     <string name="development_settings_summary">Set options for app development</string>
     <!-- Setting checkbox title for Whether to enable USB debugging support on the phone. -->
     <string name="enable_adb">Android debugging</string>
+    <!-- Setting checkbox summary for Whether to enable USB debugging support on the phone -->
+    <string name="enable_adb_summary">Debug mode when USB is connected</string>
     <!-- Setting checkbox title for displaying USB debugging notification -->
     <string name="adb_notify">USB debugging notify</string>
     <!-- Setting checkbox summary for displaying USB debugging notification -->

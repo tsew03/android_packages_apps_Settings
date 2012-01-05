@@ -27,6 +27,10 @@
     <!-- Category headings in left-pane header menu --> <skip />
     <!-- Codename Settings main menu category heading. (Settings, Tools...). [CHAR LIMIT=40] -->
     <string name="header_category_cnd">Codename</string>
+    <!-- Codename Settings main menu category heading. (Settings, Tools...). [CHAR LIMIT=40] -->
+    <string name="header_category_galaxy_nexus">Galaxy Nexus</string>
+    <!-- Settings main menu category heading. Anderson (Anderson settings). [CHAR LIMIT=40] -->
+    <string name="header_category_anderson">ANDERSON OPTIONS</string>
     <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
     <string name="header_category_wireless_networks">WIRELESS &amp; NETWORKS</string>
     <!-- Settings main menu category heading. Device (Sound, display, battery, applications...). [CHAR LIMIT=40] -->
@@ -3795,6 +3799,18 @@ found in the list of installed apps.</string>
 
     <!-- Representation of a numerical percentage. [CHAR LIMIT=8] -->
     <string name="percentage"><xliff:g id="number" example="30">%d</xliff:g>%%</string>
+    
+    <string name="notification_pulse_settings">Pulse</string>
+    <!-- Anderson settings screen heading -->
+    <string name="anderson_notification_settings">Notification Settings</string>
+    <!-- Anderson notification settings - pulse notifications -->
+    <string name="notification_category_pulse_title">Pulse Notification</string>
+    <!-- Pulse notificaton light color -->
+    <string name="pulse_color_title">Pulse Color</string>
+    <!-- Pulse notificaton duration -->
+    <string name="pulse_duration_title">Pulse Duration</string>
+    <!-- Pulse notificaton light color -->
+    <string name="pulse_frequency_title">Pulse Frequency</string>
 
     <!-- A menu item in "About phone" that allows the user to update the phone with settings
     from their cell phone carrier. The use of the string is similar to the string

@@ -704,4 +704,68 @@
         <!-- Status message when VPN is failed. -->
         <item>Unsuccessful</item>
     </string-array>
+    
+    <!-- Color options for pulse -->
+    <string-array name="pulse_color_entries">
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>White</item>
+        <item>Yellow</item>
+    </string-array>
+    
+    <!-- Blue: -16776961 (0xff0000ff) -->
+    <!-- Green: -16711936 (0xff00ff00) -->
+    <!-- Red: -65536 (0xffff0000) -->
+    <!-- White: -1 (0xffffffff) -->
+    <!-- Yellow: -256 (0xffffff00) -->
+
+    <!-- Values for pulse_color_entries matching constants in AndersonNotificationSettings. Do not translate. -->
+    <string-array name="pulse_color_values" translatable="false">
+        <item>-16776961</item>
+        <item>-16711936</item>
+        <item>-65536</item>
+        <item>-1</item>
+        <item>-256</item>
+    </string-array>
+    
+    
+    <!-- Pulse duration -->
+    <string-array name="pulse_duration_entries">
+        <item>0.5 seconds</item>
+        <item>1 second</item>
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+        <item>4 seconds</item>
+        <item>5 seconds</item>
+    </string-array>
+    
+    <!-- Values for the pulse_duration_entries -->
+    <string-array name="pulse_duration_values" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+    </string-array>
+    
+    <!-- Pulse duration -->
+    <string-array name="pulse_frequency_entries">
+        <item>1 second</item>
+        <item>3 seconds</item>
+        <item>5 seconds</item>
+        <item>7 seconds</item>
+        <item>9 seconds</item>
+    </string-array>
+    
+    <!-- Values for the pulse_duration_entries -->
+    <string-array name="pulse_frequency_values" translatable="false">
+        <item>1000</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>7000</item>
+        <item>9000</item>
+    </string-array>
+    
 </resources>

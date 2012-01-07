@@ -81,6 +81,18 @@
             android:targetPackage="com.android.launcher"
             android:targetClass="com.android.launcher2.preference.Preferences" />
     </header>
+    
+    <!-- Galaxy Nexus Settings -->
+    <header
+        android:id="@+id/notification_pulse_header"
+        android:title="@string/header_category_galaxy_nexus" />
+    
+    <!-- Pulse Notification Settings -->
+    <header
+        android:id="@+id/notification_pulse_settings"
+        android:fragment="com.android.settings.NotificationPulseSettings"
+        android:icon="@drawable/ic_notification_pulse"
+        android:title="@string/notification_pulse_settings" />
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />

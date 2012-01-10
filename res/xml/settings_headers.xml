@@ -71,6 +71,13 @@
             android:targetClass="com.codenamedroid.settings.SlideSettings" />
     </header>
     
+    <!-- Performance Settings -->
+    <header
+        android:id="@+id/performance_settings"
+        android:fragment="com.android.settings.PerformanceSettings"
+        android:icon="@drawable/ic_settings_performance"
+        android:title="@string/cpu_settings_title" />
+    
     <!-- Codename: Launcher -->
     <header
         android:id="@+id/launcher_settings"

@@ -326,6 +326,10 @@ public class Settings extends PreferenceActivity implements ButtonBarHandler {
             } else if (id == R.id.operator_settings || id == R.id.manufacturer_settings ||
                        id == R.id.cnd_settings || id == R.id.launcher_settings) {
                 Utils.updateHeaderToSpecificActivityFromMetaDataOrRemove(this, target, header);
+            } else if (id == R.id.performance_settings) {
+                if (getResources().getBoolean(R.bool.config_performance_disabled)) {
+                    target.remove(header);
+                }
             } else if (id == R.id.notification_pulse_header || id == R.id.notification_pulse_settings) {
                 // Remove Galaxy Pulse Settings if its not available.
                 if (!getResources().getBoolean(R.bool.config_galaxy_pulse)) {

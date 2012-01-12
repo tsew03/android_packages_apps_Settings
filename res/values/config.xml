@@ -20,6 +20,7 @@
     <bool name="config_msid_enable" translatable="false">false</bool>
     
     <bool name="config_galaxy_pulse">false</bool>
+    <bool name="config_performance_disabled">true</bool>
 
     <string name="additional_system_update" translatable="false"></string>
     <string name="additional_system_update_menu" translatable="false"></string>
